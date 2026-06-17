@@ -59,13 +59,13 @@ npx netlify dev
 3. Configure as variáveis de ambiente (local no `.env`, em produção no painel da Netlify):
 
 ```
-SMTP_HOST=smtp.gmail.com
+SMTP_HOST=smtp.ethereal.email
 SMTP_PORT=587
 SMTP_SECURE=false
-SMTP_USER=sua-conta@gmail.com
-SMTP_PASS=senha-de-app-gerada
-CONTACT_EMAIL=email-que-vai-receber@dominio.com
-ALLOWED_ORIGIN=https://seu-site.netlify.app
+SMTP_USER=<usuário gerado>
+SMTP_PASS=<senha gerada>
+CONTACT_EMAIL=qualquer@email.com
+ALLOWED_ORIGIN=
 ```
 
 ## Deploy no Netlify
