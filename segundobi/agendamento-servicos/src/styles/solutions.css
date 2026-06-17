@@ -1,0 +1,36 @@
+#solutions,
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 4rem;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+#solutions header,
+#about header {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  max-width: 33rem;
+}
+
+#solutions p,
+#about p {
+  color: var(--second-text-color);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (width >= 1280px) {
+  #solutions,
+  #about {
+    padding-block: 6rem;
+  }
+}
