@@ -20,8 +20,6 @@ agendamento-servicos/
 │   │   └── Home.tsx            ← landing page completa
 │   └── styles/                 ← um arquivo CSS por seção
 ├── netlify.toml
-├── .env.example
-└── .env                        ← NÃO COMMITAR (já está no .gitignore)
 ```
 
 ## Como rodar localmente
@@ -59,13 +57,13 @@ npx netlify dev
 3. Configure as variáveis de ambiente (local no `.env`, em produção no painel da Netlify):
 
 ```
-SMTP_HOST=smtp.ethereal.email
+SMTP_HOST=smtp.seu-provedor.com
 SMTP_PORT=587
 SMTP_SECURE=false
-SMTP_USER=<usuário gerado>
-SMTP_PASS=<senha gerada>
-CONTACT_EMAIL=qualquer@email.com
-ALLOWED_ORIGIN=
+SMTP_USER=seu-email@dominio.com
+SMTP_PASS=xxxx xxxx xxxx xxxx
+CONTACT_EMAIL=email-que-recebe@dominio.com
+ALLOWED_ORIGIN=https://seu-site.netlify.app
 ```
 
 ## Deploy no Netlify
@@ -75,14 +73,6 @@ ALLOWED_ORIGIN=
 3. As configurações de build (`npm run build`, pasta `dist`, pasta de functions) já estão no `netlify.toml`, não é necessário configurar manualmente.
 4. Em **Site configuration > Environment variables**, adicione as mesmas variáveis do `.env`.
 5. Faça o deploy. A function ficará disponível em `/api/send-email`.
-
-## Componentes e desafios implementados
-
-- Componente `Card` reutilizável (desafio do guia de Solutions).
-- Componente `TestimonialCard` recebendo imagem, texto, nome, cargo e quantidade de estrelas via props (desafio do guia de Testemunhos).
-- Correção do overflow do menu mobile com `useEffect`, e fechamento do menu ao clicar em um link.
-- Favicon e nome do projeto personalizados.
-- Seções de Pricing, Contato (com formulário validado) e Footer completos.
 
 ## Tecnologias
 
