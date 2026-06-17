@@ -1,0 +1,45 @@
+.btn-primary {
+    width: fit-content;
+    background: var(--primary-color);
+    color: var(--light-text-color);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+    padding-block: 0.825rem;
+    padding-inline: 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: solid transparent 0.15rem;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary {
+    width: fit-content;
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+    padding-block: 0.825rem;
+    padding-inline: 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: solid var(--primary-color) 0.15rem;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: var(--light-text-color);
+    border-color: transparent;
+}
+
+/* Dentro dos cards de planos (pricing) o botão deve ocupar a largura toda */
+.pricing-card .btn-primary,
+.pricing-card .btn-secondary {
+    width: 100%;
+}
